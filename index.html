@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Pdf generator</title>
+</head>
+<body>
+  
+   <section class="container">
+    <div class="heading">
+        <h1>Hey 😊</h1>
+    <p>Generate your assignment cover page! Just fill up the form and boom💥</p>
+    </div>
+    <div class="pdf-container">
+        <form  class="pdf-form">
+            <div class="general-details">
+                <div class="sub-div">
+                    <label for="topic">Assignment topic</label>
+                    <input type="text" name="topic">
+                </div>
+                
+                <div class="sub-div">
+                    <label for="batch">Batch</label>
+                    <input type="text" name="batch">
+                </div>
+               
+                <div class="sub-div">
+                    <label for="course-code">Course code</label>
+                    <input type="text" name="coursecode">
+                </div>
+           
+                <div class="sub-div">
+                    <label for="course-title">Course title</label>
+                <input type="text" name="coursetitle">
+                </div>
+               
+            </div>
+            <div class="personal-details">
+                <div class="teacher-details">
+                    <h3>Faculty details</h3>
+                    <label for="teachername">Teacher name</label>
+                    <input type="text" name="teachername">
+                    <label for="designation">Designation</label>
+                    <input type="text" name="designation">
+                    <label for="department">Department</label>
+                    <input type="text" name="department">
+                </div>
+                <div class="student-details">
+                    <h3>Student details</h3>
+                    <label for="stdname">Student name</label>
+                    <input type="text" name="stdname" id="stdname">
+                    <label for="id">Student id</label>
+                    <input type="text" name="studentid" id="id">
+                    <label for="section">Student Section</label>
+                    <input type="text" name="stdsection" id="section">
+                    <label for="date-submission">Date of Submission</label>
+                    <input type="text" name="submissiondate" id="date-submission">
+            </div>
+            </div>  
+            <button type="submit" class="sub-btn">Download pdf</button>
+        </form>
+    
+    </div>
+   </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+   
+   <script src="pdf.js"></script>
+</body>
+</html>
