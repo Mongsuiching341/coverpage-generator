@@ -10,6 +10,32 @@ input,label{
     display: block;
 }
 
+.radio-box{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=radio]{
+    display: inline-block;
+    width: auto;
+}
+
+.radio-input-box{
+    display: flex;
+    gap: 1rem;
+}
+
+.topic-box-1,.topic-box-2{
+    display: none;
+}
+
+.topic-box-1.active{
+    display: block;
+}
+.topic-box-2.active{
+    display: block;
+}
+
 .container{
     max-width: 1140px;
     margin-left: auto;
@@ -33,7 +59,14 @@ input,label{
 
 .sub-div{
 
-    flex: 1 1 40% ;
+    flex: 1 1 50% ;
+}
+
+@media (min-width:765px) {
+    .sub-div{
+
+        flex: 1 1 40% ;
+    }
 }
 
 .heading{

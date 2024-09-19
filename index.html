@@ -17,11 +17,30 @@
     <div class="pdf-container">
         <form  class="pdf-form">
             <div class="general-details">
-                <div class="sub-div">
-                    <label for="topic">Assignment topic</label>
-                    <input type="text" name="topic">
+                <div class="sub-div radio-box">
+                    <h4>Choose Assignment topic style</h4>
+                   <div class="radio-inputs">
+                    <div class="radio-input-box">
+                        <label for="myself">Have assignment no?</label>
+                    <input type="radio" name="modify" id="myself" value="myself">
+                    </div>
+                    <div class="radio-input-box">
+                        <label for="builtin">Have assignment topic?</label>
+                        <input type="radio" name="modify" id="builtin" value="builtin">
+                    </div>
+                    
+                   </div>
                 </div>
+                <div class="sub-div topic-box-1">
+                    <label for="topic">Assignment topic</label>
+                    <input type="text" name="topic1">
+                </div> 
                 
+                 <div class="sub-div topic-box-2">
+                    <label for="topic">Assignment no</label>
+                    <input type="text" name="topic2">
+                </div> 
+
                 <div class="sub-div">
                     <label for="batch">Batch</label>
                     <input type="text" name="batch">
